@@ -1,0 +1,55 @@
+/*dica:primeiro estilizacao depois posicionamento*/
+/* ESTILIZACAO */
+h1 {
+    color: #fff;/*cor da fonte*/
+	font-family: Arial, Helvetica, sans-serif;/*fonte em sequencia se roda ate so sans-serif(sem serifa)*/
+	background-color: rgb(212, 116, 5);/*cor do bloco da area atraz da fonte*/
+	padding: 0.5rem;/*box model(modelo de bloco da area); rem=unidade de medida de px*/
+	font-size:1.5rem;/*tamanho da fonte*/
+}
+
+ul {
+	list-style-type:none;/*remover caracteristica da lista*/
+	padding-left: 1rem;/*box model esquerdo da fonte*/
+}
+nav ul li{/*diretorio*/
+	background: aquamarine;
+	margin-bottom:1rem;
+	padding: 0.25rem;
+}
+ul li a{
+	color: red;
+	background: aquamarine;
+}
+article {
+	border: 3px solid rgb(212, 116, 5);/*padd"<"box model borda"<"margem*/
+	padding: 1.5rem;
+}
+article section h2{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(212, 116, 5);
+	padding: 0.5rem;
+	font-size: 1.25rem;
+	margin-top: 0;
+} 
+article section p{
+	font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* POSICIONAMENTO */
+article section {/*pegando uma seçao no artigo; por seçao*/
+	width: 630px;/*largura de pixel por seçao. resulta em um corte porem ainda com a quebra de texto*/
+	border: 1px solid rgb(212, 116, 5);/*bordas nas selecoes*/
+	box-sizing:border-box;/*brawser entender que borda define uma caixa separada*/
+	padding: 0.5rem;/*permitindo o uso do padd dentro da caixa*/
+}
+article {
+	display: flex;/*flexbiliza o artigo, tirando a quebra de texto*/
+	justify-content: space-between;/*pegar o espaco que sobra entree colocar entre eles*/
+}
+
+/* BOTAO ESTILIZACAO */
+footer p a {
+	
+}
